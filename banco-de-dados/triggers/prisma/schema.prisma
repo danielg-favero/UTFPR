@@ -1,0 +1,37 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Pessoa {
+  pk_pessoa        Int           @id @default(autoincrement()) @db.Integer
+  nome             String        @db.VarChar(50)
+  sobrenome        String        @db.VarChar(50)
+  nasc             DateTime      @db.Timestamp()
+  fk_nacionalidade Int
+  nacionalidade    Nacionalidade @relation(fields: [fk_nacionalidade], references: [pk_nacionalidade])
+  fk_estado_civil  Int
+  estado_civil     EstadoCivil   @relation(fields: [fk_estado_civil], references: [pk_estado_civil])
+
+  @@map(name: "pessoa")
+}
+
+model Nacionalidade {
+  pk_nacionalidade Int      @id @default(autoincrement()) @db.Integer
+  pais             String   @db.VarChar(50)
+  Pessoa           Pessoa[]
+
+  @@map(name: "nacionalidade")
+}
+
+model EstadoCivil {
+  pk_estado_civil Int      @id @default(autoincrement()) @db.Integer
+  est_civil       String   @db.VarChar(50)
+  Pessoa          Pessoa[]
+
+  @@map(name: "estado_civil")
+}
