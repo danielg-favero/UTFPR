@@ -1,0 +1,2 @@
+% Exemplo 1 do método de Newtonclcclear% função f(x)f = @(x) x^3 - 9*x + 3;% derivada da função fdf = @(x) 3*x^2 -9;% chute inicialx(1) = 0;% tolerânciatol = 0.0001;% máximo de iteraçõesmax_iter = 1000;for k = 1: max_iter    x(k+1) = x(k) - f(x(k)) / df(x(k));        if abs(x(k+1) - x(k)) < tol && abs(f(x(k))) < tol        break
+    endifendforx(k)f(x(k))
