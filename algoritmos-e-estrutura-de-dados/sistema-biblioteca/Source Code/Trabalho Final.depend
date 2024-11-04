@@ -1,0 +1,141 @@
+# depslib dependency file v1.0
+1572214108 source:c:\users\fernando\documents\programação\codeblocks\trabalho final\trabalho final\livros.c
+	"Livros.h"
+
+1572106966 source:c:\users\fernando\documents\programação\codeblocks\trabalho final\trabalho final\main.c
+	"Sistema.h"
+	"Livros.h"
+
+1572222214 c:\users\fernando\documents\programação\codeblocks\trabalho final\trabalho final\livros.h
+	"Sistema.h"
+
+1572222214 c:\users\fernando\documents\programação\codeblocks\trabalho final\trabalho final\sistema.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Livros.h"
+	"Usuarios.h"
+
+1572212921 source:c:\users\fernando\documents\programação\codeblocks\trabalho final\trabalho final\sistema.c
+	"Sistema.h"
+	"Livros.h"
+
+1572222214 c:\users\fernando\documents\programação\codeblocks\trabalho final\trabalho final\usuarios.h
+	"Sistema.h"
+
+1574546028 source:g:\nova pasta (3)\programação\algoritmos e estrutura de dados\trabalho final\source code\main.c
+	"Sistema.h"
+
+1574637538 g:\nova pasta (3)\programação\algoritmos e estrutura de dados\trabalho final\source code\sistema.h
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<conio.h>
+	<string.h>
+	"Livros.h"
+	"Usuarios.h"
+	"Encadeada.h"
+	"Arquivos.h"
+
+1574637538 g:\nova pasta (3)\programação\algoritmos e estrutura de dados\trabalho final\source code\livros.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1574637538 g:\nova pasta (3)\programação\algoritmos e estrutura de dados\trabalho final\source code\usuarios.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1574935918 source:g:\nova pasta (3)\programação\algoritmos e estrutura de dados\trabalho final\source code\livros.c
+	"Sistema.h"
+
+1575026006 source:g:\nova pasta (3)\programação\algoritmos e estrutura de dados\trabalho final\source code\sistema.c
+	"Sistema.h"
+
+1574643669 source:g:\nova pasta (3)\programação\algoritmos e estrutura de dados\trabalho final\source code\usuarios.c
+	"Sistema.h"
+
+1574038716 source:c:\users\fernando\documents\programação\codeblocks\trabalho final\source code\livros.c
+	"Sistema.h"
+
+1573911556 c:\users\fernando\documents\programação\codeblocks\trabalho final\source code\sistema.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Livros.h"
+	"Usuarios.h"
+	"Encadeada.h"
+
+1573411426 c:\users\fernando\documents\programação\codeblocks\trabalho final\source code\livros.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1573338030 c:\users\fernando\documents\programação\codeblocks\trabalho final\source code\usuarios.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1574036382 source:c:\users\fernando\documents\programação\codeblocks\trabalho final\source code\main.c
+	"Sistema.h"
+
+1574039318 source:c:\users\fernando\documents\programação\codeblocks\trabalho final\source code\sistema.c
+	"Sistema.h"
+
+1574038716 source:c:\users\fernando\documents\programação\codeblocks\trabalho final\source code\usuarios.c
+	"Sistema.h"
+
+1573412847 source:c:\users\fernando\documents\programação\codeblocks\trabalho final\teste\livros.c
+	"Sistema.h"
+
+1573410551 c:\users\fernando\documents\programação\codeblocks\trabalho final\teste\sistema.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Livros.h"
+	"Usuarios.h"
+
+1573411426 c:\users\fernando\documents\programação\codeblocks\trabalho final\teste\livros.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1573338030 c:\users\fernando\documents\programação\codeblocks\trabalho final\teste\usuarios.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1573410624 source:c:\users\fernando\documents\programação\codeblocks\trabalho final\teste\main.c
+	"Sistema.h"
+
+1573413147 source:c:\users\fernando\documents\programação\codeblocks\trabalho final\teste\sistema.c
+	"Sistema.h"
+
+1573413430 source:c:\users\fernando\documents\programação\codeblocks\trabalho final\teste\usuarios.c
+	"Sistema.h"
+
+1574040403 c:\users\fernando\documents\programação\codeblocks\trabalho final\source code\encadeada.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1574039886 source:c:\users\fernando\documents\programação\codeblocks\trabalho final\source code\encadeada.c
+	"Encadeada.h"
+
+1575024661 source:g:\nova pasta (3)\programação\algoritmos e estrutura de dados\trabalho final\source code\encadeada.c
+	"Sistema.h"
+
+1574941689 g:\nova pasta (3)\programação\algoritmos e estrutura de dados\trabalho final\source code\encadeada.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1574637538 g:\nova pasta (3)\programação\algoritmos e estrutura de dados\trabalho final\source code\arquivos.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1574942554 source:g:\nova pasta (3)\programação\algoritmos e estrutura de dados\trabalho final\source code\arquivos.c
+	"Sistema.h"
+

@@ -1,0 +1,18 @@
+typedef struct Usuario Usuario;
+
+struct Usuario{
+    char nome[51];
+    int idade;
+    int cpf;
+    char email[21];
+    int qtdeLivros;
+    int ID:
+
+    Lista_Livros *livros_emprestados;
+    Usuario *proximo;
+    Usuario *anterior;
+};
+
+typedef struct{
+    Usuario *inicio;
+}Lista_Usuarios;

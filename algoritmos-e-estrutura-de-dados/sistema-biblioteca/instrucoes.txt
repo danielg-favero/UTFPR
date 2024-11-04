@@ -1,0 +1,71 @@
+~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=<<<
+
+	OBRIGADO POR UTILIZAR NOSSO SISTEMA DE GERENCIAMENTO DE BIBLIOTECA!
+
+~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=<<<
+
+ * Projeto realizado por:
+   > Daniel Gustavo favero.
+   > Acadêmico do 2º semestre de Engenharia de Computação pela Universidade Tecnológica Federal do Paraná  (UTFPR) - Câmpus Pato Branco.
+
+ * Projeto realizado na disciplina de Algoritmos e Estrutura de Dados 1, ministrada pelo professor Jefferson Tales Oliva como forma de avaliação parcial.
+
+~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=<<<
+
+		INSTRUÇÕES PARA A UTILIZAÇÃO DO SISTEMA
+
+~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=<<<
+
+ * Senha: admin
+ * Usuario: admin
+
+ * Todas as alterações feitas no sistema serão salvas em arquivos de texto.
+ * Todos os arquivos(.txt, executáveis, .c, .h) estão localizados na pasta "Source Code".
+
+~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=<<<
+
+		ESTRUTURA DOS ARQUIVOS DE TEXTO
+
+~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=<<<
+
+ > ARQUIVO DOS USUARIOS <
+
+   ~ ID
+   ~ NOME
+   ~ E-MAIL
+   ~ QUANTIDADE DE LIVROS EMPRESTADOS
+
+
+ > ARQUIVO DOS LIVROS <
+
+   ~ ID
+   ~ NOME
+   ~ AUTOR
+   ~ EDITORA
+   ~ GÊNERO
+   ~ ANO DE PUBLICAÇÃO
+   ~ 1 (EMPRESTADO) OU 0 (DISPONÍVEL)
+
+
+  > ARQUIVO DOS LIVROS EMPRESTADOS <
+    (Cada usuário possui seu próprio arquivo de livros emprestados)
+
+   ~ ID
+   ~ NOME
+   ~ AUTOR
+   ~ EDITORA
+   ~ GÊNERO
+   ~ ANO DE PUBLICAÇÃO
+
+   
+  > ARQUIVO DOS USUARIOS <
+    (Cada livro possui sua própria lista de espera)
+
+   ~ ID
+   ~ NOME
+   ~ E-MAIL
+
+
+
+
+

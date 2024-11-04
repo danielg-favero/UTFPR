@@ -1,0 +1,17 @@
+typedef struct Livro Livro;
+
+struct Livro{
+    char nome[21];
+    char autor[21];
+    char genero[11];
+    char editora[21];
+    int ano;
+    int ID;
+
+    Livro *proximo;
+    Livro *anterior;
+};
+
+typedef struct{
+    Livro *inicio;
+}Lista_Livros;
