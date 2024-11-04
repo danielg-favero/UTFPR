@@ -1,0 +1,137 @@
+Building configuration...
+
+Current configuration : 2449 bytes
+!
+version 15.1
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+service password-encryption
+security passwords min-length 10
+!
+hostname r-cv-dgf
+!
+login block-for 120 attempts 3 within 60
+!
+!
+enable secret 5 $1$mERr$LvevGgr.W9/OjRuwwBXb31
+!
+!
+!
+!
+!
+!
+no ip cef
+ipv6 unicast-routing
+!
+no ipv6 cef
+!
+!
+!
+username daniel secret 5 $1$mERr$F5V/u2120qbEqnDJcxLe00
+!
+!
+license udi pid CISCO2811/K9 sn FTX1017OO8I-
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip domain-name daniel.favero.com.br
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/0
+ description Filial2
+ ip address 200.200.28.97 255.255.255.224
+ duplex auto
+ speed auto
+ ipv6 address FE80::1 link-local
+ ipv6 address 2001:DB8:ACAD:1C02::1/64
+ ipv6 enable
+!
+interface FastEthernet0/1
+ description cv-ita
+ ip address 200.200.28.242 255.255.255.252
+ duplex auto
+ speed auto
+ ipv6 address 2001:DB8:ACAD:1CFF::4:2/112
+ ipv6 enable
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+ip classless
+ip route 200.200.28.0 255.255.255.192 200.200.28.241 
+ip route 200.200.28.64 255.255.255.224 200.200.28.241 
+ip route 200.200.28.224 255.255.255.252 200.200.28.241 
+ip route 200.200.28.228 255.255.255.252 200.200.28.241 
+ip route 200.200.28.232 255.255.255.252 200.200.28.241 
+ip route 200.200.28.236 255.255.255.252 200.200.28.241 
+!
+ip flow-export version 9
+!
+ipv6 route 2001:DB8:ACAD:1C00::/64 2001:DB8:ACAD:1CFF::4:1
+ipv6 route 2001:DB8:ACAD:1C01::/64 2001:DB8:ACAD:1CFF::4:1
+ipv6 route 2001:DB8:ACAD:1CFF::1:0/112 2001:DB8:ACAD:1CFF::4:1
+ipv6 route 2001:DB8:ACAD:1CFF::2:0/112 2001:DB8:ACAD:1CFF::4:1
+ipv6 route 2001:DB8:ACAD:1CFF::3:0/112 2001:DB8:ACAD:1CFF::4:1
+ipv6 route 2001:DB8:ACAD:1CFF::/112 2001:DB8:ACAD:1CFF::4:1
+!
+ip access-list extended sl_def_acl
+ deny tcp any any eq telnet
+ deny tcp any any eq www
+ deny tcp any any eq 22
+ permit tcp any any eq 22
+!
+banner motd ^C-------------------------------------------------------------------------------------------
+
+| |
+
+| Roteador Pato Branco |
+
+| |
+
+| ATENCAO Acesso Restrito a pessoas autorizadas! |
+
+| |
+
+| Administrador: DANIEL GUSTAVO FAVERO (danielfavero@alunos.utfpr.edu.br) |
+
+| |
+
+-------------------------------------------------------------------------------------------^C
+!
+!
+!
+!
+!
+line con 0
+ exec-timeout 5 0
+ password 7 08016F41070A48131305050126
+ login
+!
+line aux 0
+!
+line vty 0 4
+ exec-timeout 5 0
+ login local
+ transport input ssh
+line vty 5 15
+ exec-timeout 5 0
+ login local
+ transport input ssh
+!
+!
+!
+end

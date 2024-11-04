@@ -1,0 +1,11 @@
+enable
+conf t
+hostname sw-matriz-dgf
+ip default-gateway 200.200.28.1
+interface vlan1
+description Matriz
+ip address 200.200.28.2 255.255.255.192
+no shutdown
+exit
+exit
+w

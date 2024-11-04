@@ -1,0 +1,58 @@
+enable
+conf t
+hostname r-cv-dgf
+ipv6 unicast-routing
+interface fa0/0
+description Filial2
+ip address 200.200.28.97 255.255.255.224
+ipv6 address 2001:DB8:ACAD:1C02::1/64
+ipv6 enable
+no shutdown
+exit
+interface fa0/1
+description cv-ita
+ip address 200.200.28.242 255.255.255.252
+ipv6 address 2001:DB8:ACAD:1CFF::4:2/112
+ipv6 enable
+no shutdown
+exit
+ip route 200.200.28.0 255.255.255.192 200.200.28.241
+ip route 200.200.28.64 255.255.255.224 200.200.28.241
+ip route 200.200.28.224 255.255.255.252 200.200.28.241
+ip route 200.200.28.228 255.255.255.252 200.200.28.241
+ip route 200.200.28.232 255.255.255.252 200.200.28.241
+ip route 200.200.28.236 255.255.255.252 200.200.28.241
+ipv6 route 2001:DB8:ACAD:1C00::/64 2001:DB8:ACAD:1CFF::4:1
+ipv6 route 2001:DB8:ACAD:1C01::/64 2001:DB8:ACAD:1CFF::4:1
+ipv6 route 2001:DB8:ACAD:1CFF::/112 2001:DB8:ACAD:1CFF::4:1
+ipv6 route 2001:DB8:ACAD:1CFF::1:0/112 2001:DB8:ACAD:1CFF::4:1
+ipv6 route 2001:DB8:ACAD:1CFF::2:0/112 2001:DB8:ACAD:1CFF::4:1
+ipv6 route 2001:DB8:ACAD:1CFF::3:0/112 2001:DB8:ACAD:1CFF::4:1
+security passwords min-length 10
+login block-for 120 attempts 3 within 60
+line vty 0 15
+exec-timeout 5
+login local
+transport input ssh 
+exit
+service password-encryption
+line con 0
+exec-timeout 5
+password @Cons-daniel
+login
+exit
+enable secret @dmin-daniel
+banner motd $	-------------------------------------------------------------------------------------------
+| 															|
+| 						Roteador Pato Branco 						|
+| 															|
+| 				ATENCAO Acesso Restrito a pessoas autorizadas! 				|
+| 															|
+| Administrador: DANIEL GUSTAVO FAVERO (danielfavero@alunos.utfpr.edu.br) 	|
+| 															|
+-------------------------------------------------------------------------------------------$
+ip domain name daniel.favero.com.br
+crypto key generate rsa general-keys modulus 1024
+username daniel secret ssh@Network1ng
+exit
+w
